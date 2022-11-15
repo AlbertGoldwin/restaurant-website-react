@@ -64,7 +64,15 @@ const Footer = () => (
     </div>
 
     <div className="footer-copyright">
-      <p className="p__cormorant">2021 Gericht. All Rights Reserved.</p>
+      <a
+        className="p__cormorant"
+        href="https://www.flaticon.com/free-icons/restaurant"
+        target="_blank"
+        title="restaurant icons"
+      >
+        Restaurant icons created by Freepik - Flaticon
+      </a>
+      <p className="p__cormorant">2022 Gericht. All Rights Reserved.</p>
     </div>
   </div>
 );

@@ -15,16 +15,16 @@ const Navbar = () => {
     window.addEventListener('scroll', function () {
       var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       if (scrollTop > lastScrollTop) {
-        navbar.style.top = `-${navbarHeight}px`;
+        navbar.style.top = '-100px';
       } else {
         navbar.style.top = '0';
       }
       lastScrollTop = scrollTop;
 
       if (scrollTop > navbarHeight) {
-        navbar.style.borderBottom = '1px solid var(--color-crimson)';
+        navbar.style.background = 'black';
       } else {
-        navbar.style.borderBottom = 'none';
+        navbar.style.background = 'var(--color-black)';
       }
     });
   }, []);

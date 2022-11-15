@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 
+import { meal } from '../../constants';
 import { BsPlayCircle, BsPauseCircle } from 'react-icons/bs';
 import './Intro.css';
 
@@ -20,12 +21,7 @@ const Intro = () => {
 
   return (
     <div className="app__video">
-      <video
-        ref={video}
-        src="src\assets\meal.mp4"
-        type="video/mp4"
-        loop
-      ></video>
+      <video ref={video} src={meal} type="video/mp4" loop></video>
       <div className="app__video-overlay flex__center">
         <div className="app__video-overlay_controls">
           {playVideo ? (

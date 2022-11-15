@@ -14,7 +14,7 @@
   padding-right: 2rem;
 }
 
-.app__gallery-content p {
+.app__gallery-content > p {
   margin: 2rem 0;
   color: var(--color-grey);
 }
