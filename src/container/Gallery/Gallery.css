@@ -1,0 +1,128 @@
+.app__gallery {
+  background-color: var(--color-black);
+  padding-right: 0;
+}
+
+.app__gallery-content {
+  flex: 1 1;
+  width: 100%;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-right: 2rem;
+}
+
+.app__gallery-content p {
+  margin: 2rem 0;
+  color: var(--color-grey);
+}
+
+.app__gallery-images {
+  flex: 1 1;
+  width: 100%;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: hidden;
+  column-gap: 1rem;
+}
+
+app__gallery-images_swiper {
+  width: 100%;
+}
+
+.app__gallery-images_slide {
+  width: 300px;
+  position: relative;
+}
+
+.app__gallery-images_slide:hover {
+  filter: brightness(60%);
+}
+
+.app__gallery-images_slide:hover .slide-overlay {
+  display: flex;
+}
+
+.app__gallery-images img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slide-overlay {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 20;
+  inset: 0;
+}
+
+.slide-overlay .insta {
+  font-size: 30px;
+  color: var(--color-golden);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 2000px) {
+  .app__gallery-content {
+    padding-right: 4rem;
+  }
+
+  .app__gallery-images_slide {
+    width: 450px;
+  }
+
+  .slide-overlay .insta {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .app__gallery {
+    flex-direction: column;
+  }
+
+  .app__gallery-content {
+    padding-right: 6rem;
+  }
+
+  .app__gallery-images {
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .app__gallery-content {
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__gallery-content {
+    padding-right: 2rem;
+  }
+
+  .app__gallery-images {
+    padding-right: 2rem;
+  }
+
+  .app__gallery-images_swiper {
+    padding-bottom: 1rem;
+  }
+
+  .app__gallery-images_slide {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .swiper-pagination {
+    bottom: 0px !important;
+    z-index: 10 !important;
+  }
+}

@@ -1,0 +1,8 @@
+.app__findus-content {
+  margin: 3rem 0;
+}
+
+.app__findus-content .p__cormorant {
+  margin: 2rem 0;
+  color: var(--color-golden);
+}

@@ -1,0 +1,77 @@
+.app__laurels-awards {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  column-gap: 3rem;
+  row-gap: 4rem;
+}
+
+.app__laurel-awards_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.app__laurel-awards_item img {
+  width: 120px;
+  height: 120px;
+}
+
+.app__laurel-awards_item-content {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.app__laurel-awards_item-content p:first-child {
+  color: var(--color-golden);
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 2000px) {
+  .app__laurels-awards {
+    column-gap: 3rem;
+  }
+
+  .app__laurel-awards_item img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .app__laurels-awards {
+    column-gap: 1rem;
+  }
+
+  .app__laurel-awards_item {
+    flex-basis: 48%;
+  }
+
+  .app__laurel-awards_item img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .app__laurel-awards_item-content {
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__laurel-awards_item {
+    flex-basis: 100%;
+    flex-direction: column;
+  }
+
+  .app__laurel-awards_item-content {
+    align-items: center;
+    text-align: center;
+    margin: 2rem 0 0;
+  }
+}
